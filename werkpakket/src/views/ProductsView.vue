@@ -18,25 +18,34 @@
         <form method="post" action="" enctype="text/plain">
           <label>Category</label><br>
 
-          <label for="thriller"><input type="checkbox" id="thriller" name="Laptop"
-                                       value="In bezit">Thriller</label>
+          <label for="romance"><input type="checkbox" id="romance" name="romance"
+                                       value="In bezit">Romance</label>
 
-          <label for="fantasy"><input type="checkbox" id="fantasy" name="Tablet"
+          <label for="fantasy"><input type="checkbox" id="fantasy" name="fantasy"
                                       value="In bezit">Fantasy</label>
 
-          <label for="mystery"><input type="checkbox" id="mystery" name="Tablet"
-                                      value="In bezit">Mystery</label>
+          <label for="lf"><input type="checkbox" id="lf" name="lf"
+                                      value="In bezit">Literary Fiction</label>
         </form>
       </div>
       <div class="category">
         <form method="post" action="" enctype="text/plain">
-          <label>Language</label><br>
+          <label>Author</label><br>
 
-          <label for="english"><input type="checkbox" id="english" name="Laptop" value="In bezit">English</label>
+          <label for="suzanne collins"><input type="checkbox" id="suzanne collins" name="sc" value="In bezit">Suzanne Collins</label>
 
-          <label for="dutch"><input type="checkbox" id="dutch" name="Tablet" value="In bezit">Dutch</label>
+          <label for="rebecca yarros"><input type="checkbox" id="rebecca yarros" name="ry" value="In bezit">Rebecca Yarros</label>
 
-          <label for="french"><input type="checkbox" id="french" name="Tablet" value="In bezit">French</label>
+          <label for="stephanie garber"><input type="checkbox" id="stephanie garber" name="sg" value="In bezit">Stephanie Garber</label>
+
+          <label for="ana huang"><input type="checkbox" id="ana huang" name="ah" value="In bezit">Ana Huang</label>
+
+          <label for="lynn painter"><input type="checkbox" id="lynn painter" name="lp" value="In bezit">Lynn Painter</label>
+
+          <label for="emily henry"><input type="checkbox" id="emily henry" name="eh" value="In bezit">Emily henry</label>
+
+          <label for="gabrielle zevin"><input type="checkbox" id="gabrielle zevin" name="gz" value="In bezit">Gabrielle Zevin</label>
+
         </form>
       </div>
     </div>
