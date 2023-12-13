@@ -53,7 +53,7 @@
 
     <div class="page">
       <div class="book">
-        <div class="afb"><img src="@/assets/images/fourth-wing-1.jpg" alt="Fourth Wing"></div>
+        <div class="afb"><img src="@/assets/covers/fourth-wing-1.jpg" alt="Fourth Wing"></div>
         <div class="inhoud">
           <h2>Fourth Wing</h2>
           <h3>Rebecca Yarros</h3>
@@ -70,7 +70,7 @@
         </div>
       </div>
       <div class="book">
-        <div class="afb"><img src="@/assets/images/book-lovers-7.jpg" alt="Book lovers"></div>
+        <div class="afb"><img src="@/assets/covers/book-lovers-7.jpg" alt="Book lovers"></div>
         <div class="inhoud">
           <h2>Book Lovers</h2>
           <h3>Emily Henry</h3>
@@ -88,7 +88,7 @@
         </div>
       </div>
       <div class="book">
-        <div class="afb"><img src="@/assets/images/better-than-the-movies.jpg" alt="bttm"></div>
+        <div class="afb"><img src="@/assets/covers/better-than-the-movies.jpg" alt="bttm"></div>
         <div class="inhoud">
           <h2>Better than the movies</h2>
           <h3>Lynn Painter</h3>
@@ -105,7 +105,7 @@
         </div>
       </div>
       <div class="book">
-        <div class="afb"><img src="@/assets/images/tomorrow.jpg" alt="tomorrow"></div>
+        <div class="afb"><img src="@/assets/covers/tomorrow.jpg" alt="tomorrow"></div>
         <div class="inhoud">
           <h2>Tomorrow and tomorrow and tomorrow</h2>
           <h3>Gabrielle Zevin</h3>
