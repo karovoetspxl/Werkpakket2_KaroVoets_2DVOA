@@ -52,7 +52,7 @@
 </template>
 
 <script>
-import NavComponent from "../components/NavComponent";
+import NavComponent from "@/components/NavComponent.vue";
 export default {
   name: "Home",
   components: {NavComponent}

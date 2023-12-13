@@ -4,13 +4,13 @@
       <a href="../../index.html" class="nav-logo"><img src="@/assets/images/logo.png" alt="Logo"></a>
       <ul class="nav-menu">
         <li class="nav-item">
-          <a href="../../index.html" class="nav-link">Home</a>
+          <router-link to="/">Home</router-link>
         </li>
         <li class="nav-item">
-          <a href="products.html" class="nav-link">Products</a>
+          <router-link to="/products">Products</router-link>
         </li>
         <li class="nav-item">
-          <a href="profile.html" class="nav-link">Profile</a>
+          <router-link to="/profile">Profile</router-link>
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link">Cart</a>
