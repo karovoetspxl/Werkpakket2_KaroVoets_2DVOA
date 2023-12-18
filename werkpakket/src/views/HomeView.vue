@@ -31,32 +31,24 @@
     <div class="main-div-2">
       <h2>In the spotlight</h2>
       <div class="div2-boeken">
-        <div>
-          <img src="@/assets/covers/fourth-wing-1.jpg" alt="Fourth Wing">
-          <p class="boek-info">Fourth Wing</p>
-          <p>Rebecca Yarros</p>
-        </div>
-        <div>
-          <img src="@/assets/covers/book-lovers-7.jpg" alt="Book Lovers">
-          <p class="boek-info">Book Lovers</p>
-          <p>Emily Henry</p>
-        </div>
-        <div>
-          <img src="@/assets/covers/better-than-the-movies.jpg" alt="Better than the movies">
-          <p class="boek-info">Better than the movies</p>
-          <p>Lynn Painter</p>
-        </div>
+        <ProductsList/>
       </div>
     </div>
   </main>
 </template>
 
 <script>
-import NavComponent from "@/components/NavComponent.vue";
-export default {
+import HeaderComponent from "@/components/HeaderComponent.vue";
+import { defineComponent } from 'vue';
+import ProductsList from '@/components/PopularProductsComponent.vue';
+
+export default defineComponent({
   name: "Home",
-  components: {NavComponent}
-}
+  components: {
+    HeaderComponent,
+    ProductsList,
+  }
+})
 </script>
 
 <style scoped>

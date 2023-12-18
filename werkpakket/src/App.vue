@@ -1,17 +1,19 @@
 <script>
-import NavComponent from "@/components/NavComponent.vue";
+import HeaderComponent from "@/components/HeaderComponent.vue";
 import FooterComponent from "@/components/FooterComponent.vue";
+import PopularProductsComponent from "@/components/PopularProductsComponent.vue";
 
 export default {
   components: {
-    NavComponent,
+    HeaderComponent,
     FooterComponent,
+    PopularProductsComponent,
   }
 }
 </script>
 
 <template>
-  <NavComponent/>
+  <HeaderComponent/>
 
   <router-view></router-view>
 
