@@ -31,7 +31,9 @@
     <div class="main-div-2">
       <h2>In the spotlight</h2>
       <div class="div2-boeken">
-        <ProductsList/>
+        <PopularProductsComponent v-for="product in store.popularProducts"
+        v-bind:key="product.id"
+        v-bind:product="product"/>
       </div>
     </div>
   </main>
@@ -39,14 +41,24 @@
 
 <script>
 import HeaderComponent from "@/components/HeaderComponent.vue";
-import { defineComponent } from 'vue';
-import ProductsList from '@/components/PopularProductsComponent.vue';
+import PopularProductsComponent from "@/components/PopularProductsComponent.vue";
+import { useStore } from "@/store/store";
 
-export default defineComponent({
-  name: "Home",
+export default ({
+  data(){
+    return {
+      productStore: useStore()
+    }
+  },
   components: {
     HeaderComponent,
-    ProductsList,
+    PopularProductsComponent,
+  },
+  computed: {
+    popularProducts() {
+      const sortedProducts = this.products.sort((a, b) => b.stock - a.stock)
+      return sortedProducts.slice(0, 3)
+    }
   }
 })
 </script>

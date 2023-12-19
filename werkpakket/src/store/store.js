@@ -1,15 +1,26 @@
 import { defineStore } from "pinia";
+import productsJson from '@/data.json';
 
-export const useStore = defineStore('main', {
+export const useStore = defineStore('products', {
     // state
     state: () => ({
-        products: [],
+        products: productsJson,
+        selectedProduct: 0
     }),
     // actions
     actions: {
-        fetchProducts() {
-            this.products = require('@/data.json');
+        fetchProducts(id) {
+            return this.products.find(product => product.id === id);
+        },
+        changeStock(id, amount) {
+            this.products.find(product => product.id === id).stock = amount;
+        }
+    },
+    // getters
+    getters: {
+        popularProducts(){
+            const sortedProducts = this.products.sort((a, b) => b.stock - a.stock)
+            return sortedProducts.slice(0, 3)
         }
     }
-    // getters
 })
