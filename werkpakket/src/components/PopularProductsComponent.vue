@@ -1,16 +1,21 @@
 <template>
   <div v-for="product in topProducts" :key="product.id" class="product-card">
     <img src="@/assets/covers/fourth-wing-1.jpg" alt="Fourth Wing">
-    <p class="boek-info"> {{ product.name }} </p>
-    <p>{{ product.author }}</p>
+    <p class="boek-info"> {{ products.name }} </p>
+    <p>{{ products.author }}</p>
   </div>
 </template>
 
 <script>
-import { defineComponent, onMounted } from 'vue';
 import { useStore } from '@/store/store.js';
+import { defineComponent, onMounted } from 'vue';
 
 export default defineComponent({
+  data() {
+    return {
+      store: useStore()
+    }
+  },
   setup() {
     const store = useStore();
 
