@@ -1,7 +1,7 @@
 import { defineStore } from "pinia";
-import productsJson from '@/data.json';
+import productsJson from '../data.json';
 
-export const useStore = defineStore('products', {
+export const useProductsStore = defineStore('products', {
     // state
     state: () => ({
         products: productsJson,
@@ -9,18 +9,18 @@ export const useStore = defineStore('products', {
     }),
     // actions
     actions: {
-        fetchProducts(id) {
+        findProduct(id) {
             return this.products.find(product => product.id === id);
         },
-        changeStock(id, amount) {
+        changeStock(id, amount){
             this.products.find(product => product.id === id).stock = amount;
         }
     },
     // getters
     getters: {
         popularProducts(){
-            const sortedProducts = this.products.sort((a, b) => b.stock - a.stock)
-            return sortedProducts.slice(0, 3)
+            const sortedProducts = this.products.sort((a, b) => b.stock - a.stock);
+            return sortedProducts.slice(0, 3);
         }
     }
 })
