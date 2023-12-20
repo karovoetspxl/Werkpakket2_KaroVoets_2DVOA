@@ -7,9 +7,10 @@
     "description": "In Suzanne Collins' \"The Hunger Games\", set in a dystopian future, Katniss Everdeen volunteers to participate in the brutal Hunger Games to save her sister. Forced to fight for survival against other tributes in a televised spectacle, Katniss must navigate alliances, betrayals, and a harsh government to defy the odds and emerge as a symbol of rebellion.",
     "image": "src/assets/covers/hunger-games.jpg",
     "alt": "hunger games",
-    "price": 12.95,
+    "price": "€12.95",
     "BTW": 0.06,
-    "stock": 10
+    "stock": 10,
+    "tags": ["fantasy", "suzanne-collins"]
   },
   {
     "id": 2,
@@ -19,9 +20,10 @@
     "description": "In \"Catching Fire\", the second book in Suzanne Collins' Hunger Games trilogy, Katniss Everdeen, now a victor, faces the consequences of her defiance as she becomes a symbol of rebellion against the oppressive Capitol. Forced to participate in the 75th Hunger Games, known as the Quarter Quell, Katniss confronts new challenges, political intrigue, and the evolving dynamics of resistance in a society on the brink of revolution.",
     "image": "src/assets/covers/catching-fire.jpg",
     "alt": "catching fire",
-    "price": 12.95,
+    "price": "€12.95",
     "BTW": 0.06,
-    "stock": 8
+    "stock": 8,
+    "tags": ["fantasy", "suzanne-collins"]
   },
   {
     "id": 3,
@@ -29,11 +31,12 @@
     "title": "Mockingjay",
     "author": "Suzanne Collins",
     "description": "In \"Mockingjay\", the final installment of Suzanne Collins' Hunger Games trilogy, Katniss Everdeen becomes the reluctant face of the rebellion against the Capitol. As she navigates the brutal realities of war, Katniss grapples with loss, betrayal, and the moral complexities of her role in the fight for freedom, ultimately leading to a climactic confrontation that will shape the fate of Panem.",
-    "image": "@/assets/covers/mockingjay.jpg",
+    "image": "src/assets/covers/mockingjay.jpg",
     "alt": "mockingjay",
-    "price": 12.95,
+    "price": "€12.95",
     "BTW": 0.06,
-    "stock": 9
+    "stock": 9,
+    "tags": ["fantasy", "suzanne-collins"]
   },
   {
     "id": 4,
@@ -43,9 +46,10 @@
     "description": "\"The Ballad of Songbirds and Snakes\" by Suzanne Collins is a prequel to \"The Hunger Games\" trilogy, offering a glimpse into the early life of President Snow as he mentors tributes in the 10th Hunger Games. The novel explores the origins of the Capitol's cruel traditions, presenting a compelling narrative that unveils the moral complexities behind the iconic character.",
     "image": "src/assets/covers/songbirds-snakes.jpg",
     "alt": "songbirds and snakes",
-    "price": 15.00,
+    "price": "€15.00",
     "BTW": 0.06,
-    "stock": 50
+    "stock": 50,
+    "tags": ["fantasy", "suzanne-collins"]
   },
   {
     "id": 5,
@@ -55,9 +59,10 @@
     "description": "\"Once Upon a Broken Heart\" by Stephanie Garber is a captivating fantasy novel that follows Evangeline Fox as she makes a dangerous deal with the enigmatic Prince of Hearts to revive her lost love. The story weaves a magical tale of love, betrayal, and intricate puzzles set in the enchanting world of Caraval.",
     "image": "src/assets/covers/once-upon-a-broken-heart.jpg",
     "alt": "once upon",
-    "price": 13.95,
+    "price": "€13.95",
     "BTW": 0.06,
-    "stock": 23
+    "stock": 23,
+    "tags": ["fantasy", "stephanie-garber"]
   },
   {
     "id": 6,
@@ -67,9 +72,10 @@
     "description": "\"The Ballad of Never After\" is the fiercely-anticipated sequel to the #1 New York Times bestseller \"Once Upon a Broken Heart\", starring Evangeline Fox and the Prince of Hearts on a new journey of magic, mystery, and heartbreak.",
     "image": "src/assets/covers/ballad-of-never-after.jpg",
     "alt": "ballad of never after",
-    "price": 13.95,
+    "price": "€13.95",
     "BTW": 0.06,
-    "stock": 16
+    "stock": 16,
+    "tags": ["fantasy", "stephanie-garber"]
   },
   {
     "id": 7,
@@ -79,9 +85,10 @@
     "description": "In \"A Curse for True Love\", the final book in the Once Upon A Broken Heart trilogy by Stephanie Garber, Evangeline Fox, having achieved her fairy-tale marriage, remains unaware of the high cost she paid for her happily ever after. As she navigates a perilous battle between two villains and faces the ominous threat to her true love, the story unfolds with bloodshed, stolen hearts, and a test of the very essence of love.",
     "image": "src/assets/covers/curse-for-true-love.jpg",
     "alt": "curse for true love",
-    "price": 20.95,
+    "price": "€20.95",
     "BTW": 0.06,
-    "stock": 42
+    "stock": 42,
+    "tags": ["fantasy", "stephanie-garber"]
   },
   {
     "id": 8,
@@ -91,9 +98,10 @@
     "description": "In Rebecca Yarros' novel \"Fourth Wing\", twenty-year-old Violet Sorrengail is thrust into the cutthroat world of dragon riders at Basgiath War College, despite her delicate physique. Struggling to survive in a society where dragons only bond with the strongest, she faces not only the deadly competition among cadets but also a growing suspicion that the leadership harbors a dark secret, setting the stage for a high-stakes battle for survival and revelation.",
     "image": "src/assets/covers/fourth-wing-1.jpg",
     "alt": "fourth wing",
-    "price": 20.95,
+    "price": "€20.95",
     "BTW": 0.06,
-    "stock": 65
+    "stock": 65,
+    "tags": ["fantasy", "rebecca-yarros"]
   },
   {
     "id": 9,
@@ -103,9 +111,10 @@
     "description": "In the second installment of the Empyrean series, Violet Sorrengail faces the relentless challenges of Basgiath War College, determined to survive a brutal and maliciously grueling training designed to push dragon riders to their limits. As she confronts a power-hungry vice commandant and discovers a long-buried secret, Violet relies on her sharp wits and indomitable will to navigate a perilous path, realizing that the true test lies not only in physical strength but in uncovering the mysteries that threaten them all.",
     "image": "src/assets/covers/iron-flame.jpg",
     "alt": "iron flame",
-    "price": 23.95,
+    "price": "€23.95",
     "BTW": 0.06,
-    "stock": 51
+    "stock": 51,
+    "tags": ["fantasy", "rebecca-yarros"]
   },
   {
     "id": 10,
@@ -115,9 +124,10 @@
     "description": "\"The Things We Leave Unfinished\" is a novel by Rebecca Yarros that weaves together two compelling love stories—one set against the backdrop of World War II and the other in contemporary times. As characters grapple with love, loss, and the art of storytelling, the novel explores the enduring impact of untold stories and the connections that transcend time.",
     "image": "src/assets/covers/things-we-leave-unfinished.jpg",
     "alt": "leave unfinished",
-    "price": 12.95,
+    "price": "€12.95",
     "BTW": 0.06,
-    "stock": 23
+    "stock": 23,
+    "tags": ["romance", "rebecca-yarros"]
   },
   {
     "id": 11,
@@ -127,9 +137,10 @@
     "description": "Rebecca Yarros' novel, a romance born from a chance encounter, follows Izzy Astor and Nate Phelan, whose lives take unexpected turns after surviving a plane crash in the Missouri River. As they navigate separate paths in the military and politics, their undeniable connection persists, leading to a high-stakes reunion in Afghanistan where Nate must protect Izzy, and both must confront the enduring power of fate and love.",
     "image": "src/assets/covers/likely-event.jpg",
     "alt": "likely event",
-    "price": 11.95,
+    "price": "€11.95",
     "BTW": 0.06,
-    "stock": 11
+    "stock": 11,
+    "tags": ["romance", "rebecca-yarros"]
   },
   {
     "id": 12,
@@ -139,9 +150,10 @@
     "description": "In Ana Huang's \"Twisted Love\", Alex Volkov, a man with a heart hardened by tragedy, finds his world unraveling when he's tasked with caring for his best friend's sister, Ava Chen. Despite their tumultuous connection, their unexpected love triggers a chain of secrets that could shatter everything they hold dear in this contemporary romance filled with passion, contrasts, and the complexities of forbidden desire.",
     "image": "src/assets/covers/twisted-love.jpg",
     "alt": "twisted love",
-    "price": 12.95,
+    "price": "€12.95",
     "BTW": 0.06,
-    "stock": 32
+    "stock": 32,
+    "tags": ["romance", "ana-huang"]
   },
   {
     "id": 13,
@@ -151,9 +163,10 @@
     "description": "In Ana Huang's \"Twisted Games\", elite bodyguard Rhys Larsen, bound by strict rules, finds himself drawn to Princess Bridget von Ascheberg, challenging his principles and igniting a forbidden desire. As duty clashes with desire, their love becomes a dangerous game that could unravel a kingdom and jeopardize everything they hold dear in this contemporary royal romance filled with passion and political intrigue.",
     "image": "src/assets/covers/twisted-games.jpg",
     "alt": "twisted games",
-    "price": 12.95,
+    "price": "€12.95",
     "BTW": 0.06,
-    "stock": 36
+    "stock": 36,
+    "tags": ["romance", "ana-huang"]
   },
   {
     "id": 14,
@@ -163,9 +176,10 @@
     "description": "In Ana Huang's \"Twisted Hate\", the animosity between hotshot doctor Josh Chen and ambitious Jules Ambrose explodes into an enemies-with-benefits arrangement, a combustible mix of attraction and resentment. As they navigate their tumultuous relationship, confronting demons from their past, they discover that their fiery connection may either save them or unravel everything they've built in this contemporary enemies-to-lovers romance filled with passion and complex emotions.",
     "image": "src/assets/covers/twisted-hate.jpg",
     "alt": "twisted hate",
-    "price": 12.95,
+    "price": "€12.95",
     "BTW": 0.06,
-    "stock": 28
+    "stock": 28,
+    "tags": ["romance", "ana-huang"]
   },
   {
     "id": 15,
@@ -175,9 +189,10 @@
     "description": "In Ana Huang's \"Twisted Lies\", Christian Harper, a charming and deadly gentleman with little regard for morals, becomes obsessed with Stella Alonso, a sweet and introverted woman with a past that threatens her safety. As their love story unfolds, filled with secrets and lies, they navigate a twisted romance that could either bind them together or unravel in the face of shocking truths in this contemporary slow burn filled with passion and intrigue.",
     "image": "src/assets/covers/twisted-lies.jpg",
     "alt": "twisted lies",
-    "price": 12.95,
+    "price": "€12.95",
     "BTW": 0.06,
-    "stock": 25
+    "stock": 25,
+    "tags": ["romance", "ana-huang"]
   },
   {
     "id": 16,
@@ -187,9 +202,10 @@
     "description": "In this sweet and funny teen rom-com perfect for fans of Kasie West and Jenn Bennett, perpetual daydreamer Liz Buxbaum is determined to catch the attention of her forever crush, Michael, who has just returned to town. To achieve her goal, she teams up with her cute yet obnoxious neighbor, Wes Bennett, in a scheme that unexpectedly brings them closer, challenging Liz's preconceptions about love and Happily Ever After.",
     "image": "src/assets/covers/better-than-the-movies.jpg",
     "alt": "better than the movies",
-    "price": 14.95,
+    "price": "€14.95",
     "BTW": 0.06,
-    "stock": 60
+    "stock": 60,
+    "tags": ["romance", "lynn-painter"]
   },
   {
     "id": 17,
@@ -199,9 +215,10 @@
     "description": "In this delightful romance novel, Nora, who's accustomed to being the woman men date before finding their happy-ever-after, takes a break from city life for a month in Sunshine Falls, North Carolina. Expecting encounters with sexy lumberjacks or handsome doctors, she instead finds herself repeatedly bumping into Charlie, sparking unexpected and charming twists in this small-town love story.",
     "image": "src/assets/covers/book-lovers-7.jpg",
     "alt": "book lovers",
-    "price": 13.95,
+    "price": "€13.95",
     "BTW": 0.06,
-    "stock": 59
+    "stock": 59,
+    "tags": ["romance", "emily-henry"]
   },
   {
     "id": 18,
@@ -211,9 +228,10 @@
     "description": "This touching story follows two kids who initially connect in a hospital gaming room in 1987, their shared love of video games creating a world of joy and escape amidst the challenges of illness and recovery. When they reunite eight years later, the spark is reignited, leading them to collaborate on creating games, weaving together themes of nostalgia, love, and the power of shared passions.",
     "image": "src/assets/covers/tomorrow.jpg",
     "alt": "tomorrow",
-    "price": 14.95,
+    "price": "€14.95",
     "BTW": 0.06,
-    "stock": 42
+    "stock": 42,
+    "tags": ["literary-fiction", "gabrielle-zevin"]
   },
   {
     "id": 19,
@@ -223,9 +241,10 @@
     "description": "A.J. Fikry's desolate life takes an unexpected turn when a mysterious package arrives at his failing bookstore, offering him a chance for a fresh start. As he unravels the contents of the package, Fikry discovers the transformative power of unexpected gifts, prompting him to reassess his life and find renewed purpose amidst loss and unexpected surprises.",
     "image": "src/assets/covers/storied-life-of.jpg",
     "alt": "A.J. Fikry",
-    "price": 13.95,
+    "price": "€13.95",
     "BTW": 0.06,
-    "stock": 17
+    "stock": 17,
+    "tags": ["literary-fiction", "gabrielle-zevin"]
   },
   {
     "id": 20,
@@ -235,8 +254,9 @@
     "description": "In this delightful summer challenge, January Andrews, a bestselling romance writer, and Augustus Everett, a literary author with a penchant for tragedy, embark on a creative exchange that defies their genre preferences. Living in neighboring beach houses, they strike a deal to break through writer's block: Augustus will attempt to write something happy, while January tackles the next Great American Novel, leading to a series of amusing adventures and a pact to avoid falling in love, challenging their beliefs about happily ever afters.",
     "image": "src/assets/covers/beach-read.jpg",
     "alt": "beach read",
-    "price": 10.00,
+    "price": "€10.00",
     "BTW": 0.06,
-    "stock": 35
+    "stock": 35,
+    "tags": ["romance", "emily-henry"]
   }
 ]
