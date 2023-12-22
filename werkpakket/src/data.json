@@ -9,8 +9,8 @@
     "alt": "hunger games",
     "price": "€12.95",
     "BTW": 0.06,
-    "stock": 10,
-    "tags": ["fantasy", "suzanne-collins"]
+    "stock": 0,
+    "tags": ["Fantasy", "Suzanne Collins"]
   },
   {
     "id": 2,
@@ -23,7 +23,7 @@
     "price": "€12.95",
     "BTW": 0.06,
     "stock": 8,
-    "tags": ["fantasy", "suzanne-collins"]
+    "tags": ["Fantasy", "Suzanne-Collins"]
   },
   {
     "id": 3,
@@ -36,7 +36,7 @@
     "price": "€12.95",
     "BTW": 0.06,
     "stock": 9,
-    "tags": ["fantasy", "suzanne-collins"]
+    "tags": ["Fantasy", "Suzanne Collins"]
   },
   {
     "id": 4,
@@ -49,7 +49,8 @@
     "price": "€15.00",
     "BTW": 0.06,
     "stock": 50,
-    "tags": ["fantasy", "suzanne-collins"]
+    "tags": ["Fantasy", "Suzanne Collins"]
+
   },
   {
     "id": 5,
@@ -62,7 +63,7 @@
     "price": "€13.95",
     "BTW": 0.06,
     "stock": 23,
-    "tags": ["fantasy", "stephanie-garber"]
+    "tags": ["Fantasy", "Stephanie Garber"]
   },
   {
     "id": 6,
@@ -75,7 +76,7 @@
     "price": "€13.95",
     "BTW": 0.06,
     "stock": 16,
-    "tags": ["fantasy", "stephanie-garber"]
+    "tags": ["Fantasy", "Stephanie Garber"]
   },
   {
     "id": 7,
@@ -88,7 +89,7 @@
     "price": "€20.95",
     "BTW": 0.06,
     "stock": 42,
-    "tags": ["fantasy", "stephanie-garber"]
+    "tags": ["Fantasy", "Stephanie Garber"]
   },
   {
     "id": 8,
@@ -101,7 +102,7 @@
     "price": "€20.95",
     "BTW": 0.06,
     "stock": 65,
-    "tags": ["fantasy", "rebecca-yarros"]
+    "tags": ["Fantasy", "Rebecca Yarros"]
   },
   {
     "id": 9,
@@ -114,7 +115,7 @@
     "price": "€23.95",
     "BTW": 0.06,
     "stock": 51,
-    "tags": ["fantasy", "rebecca-yarros"]
+    "tags": ["Fantasy", "Rebecca Yarros"]
   },
   {
     "id": 10,
@@ -127,7 +128,7 @@
     "price": "€12.95",
     "BTW": 0.06,
     "stock": 23,
-    "tags": ["romance", "rebecca-yarros"]
+    "tags": ["Romance", "Rebecca Yarros"]
   },
   {
     "id": 11,
@@ -140,7 +141,7 @@
     "price": "€11.95",
     "BTW": 0.06,
     "stock": 11,
-    "tags": ["romance", "rebecca-yarros"]
+    "tags": ["Romance", "Rebecca Yarros"]
   },
   {
     "id": 12,
@@ -153,7 +154,7 @@
     "price": "€12.95",
     "BTW": 0.06,
     "stock": 32,
-    "tags": ["romance", "ana-huang"]
+    "tags": ["Romance", "Ana Huang"]
   },
   {
     "id": 13,
@@ -166,7 +167,7 @@
     "price": "€12.95",
     "BTW": 0.06,
     "stock": 36,
-    "tags": ["romance", "ana-huang"]
+    "tags": ["Romance", "Ana Huang"]
   },
   {
     "id": 14,
@@ -179,7 +180,7 @@
     "price": "€12.95",
     "BTW": 0.06,
     "stock": 28,
-    "tags": ["romance", "ana-huang"]
+    "tags": ["Romance", "Ana Huang"]
   },
   {
     "id": 15,
@@ -192,7 +193,7 @@
     "price": "€12.95",
     "BTW": 0.06,
     "stock": 25,
-    "tags": ["romance", "ana-huang"]
+    "tags": ["Romance", "Ana Huang"]
   },
   {
     "id": 16,
@@ -205,7 +206,7 @@
     "price": "€14.95",
     "BTW": 0.06,
     "stock": 60,
-    "tags": ["romance", "lynn-painter"]
+    "tags": ["Romance", "Lynn Painter"]
   },
   {
     "id": 17,
@@ -218,7 +219,7 @@
     "price": "€13.95",
     "BTW": 0.06,
     "stock": 59,
-    "tags": ["romance", "emily-henry"]
+    "tags": ["Romance", "Emily Henry"]
   },
   {
     "id": 18,
@@ -231,7 +232,7 @@
     "price": "€14.95",
     "BTW": 0.06,
     "stock": 42,
-    "tags": ["literary-fiction", "gabrielle-zevin"]
+    "tags": ["Literary Fiction", "Gabrielle Zevin"]
   },
   {
     "id": 19,
@@ -244,7 +245,7 @@
     "price": "€13.95",
     "BTW": 0.06,
     "stock": 17,
-    "tags": ["literary-fiction", "gabrielle-zevin"]
+    "tags": ["Literary fiction", "Gabrielle Zevin"]
   },
   {
     "id": 20,
@@ -257,6 +258,6 @@
     "price": "€10.00",
     "BTW": 0.06,
     "stock": 35,
-    "tags": ["romance", "emily-henry"]
+    "tags": ["Romance", "Emily Henry"]
   }
 ]

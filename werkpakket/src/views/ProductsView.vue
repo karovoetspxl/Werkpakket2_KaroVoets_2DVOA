@@ -14,48 +14,11 @@
 
   <main class="main-products">
     <div class="filter">
-      <div class="category">
-        <form method="post" action="" enctype="text/plain">
-          <label>Category</label><br>
-
-          <label for="romance"><input type="checkbox" id="romance" name="romance"
-                                      value="In bezit">Romance</label>
-
-          <label for="fantasy"><input type="checkbox" id="fantasy" name="fantasy"
-                                      value="In bezit">Fantasy</label>
-
-          <label for="lf"><input type="checkbox" id="lf" name="lf"
-                                 value="In bezit">Literary Fiction</label>
-        </form>
-      </div>
-      <div class="category">
-        <form method="post" action="" enctype="text/plain">
-          <label>Author</label><br>
-
-          <label for="suzanne collins"><input type="checkbox" id="suzanne collins" name="sc" value="In bezit">Suzanne
-            Collins</label>
-
-          <label for="rebecca yarros"><input type="checkbox" id="rebecca yarros" name="ry" value="In bezit">Rebecca
-            Yarros</label>
-
-          <label for="stephanie garber"><input type="checkbox" id="stephanie garber" name="sg" value="In bezit">Stephanie
-            Garber</label>
-
-          <label for="ana huang"><input type="checkbox" id="ana huang" name="ah" value="In bezit">Ana Huang</label>
-
-          <label for="lynn painter"><input type="checkbox" id="lynn painter" name="lp" value="In bezit">Lynn
-            Painter</label>
-
-          <label for="emily henry"><input type="checkbox" id="emily henry" name="eh" value="In bezit">Emily
-            henry</label>
-
-          <label for="gabrielle zevin"><input type="checkbox" id="gabrielle zevin" name="gz" value="In bezit">Gabrielle
-            Zevin</label>
-
-        </form>
-      </div>
+        <button v-for="filterTag in this.filters" @click="addActiveFilter(filterTag)" :class="{ 'selected': filterTag === currentFilter }">{{ filterTag[0].toUpperCase() + filterTag.slice(1) }}</button>
     </div>
 
+  <button @click="this.filterBooks()">Filter</button>
+  <button @click="this.resetFilters()">Reset</button>
 
     <div class="page">
       <ProductCardComponent
@@ -91,29 +54,55 @@ export default {
       store: useProductsStore(),
       itemsPerPage: 8,
       currentPage: 1,
-      currentFilter: 'all',
+      currentFilter: 'All',
       filters: [
-        "all",
-        "category",
-        "author"
+        "All",
+        "Romance",
+        "Fantasy",
+        "Literary fiction",
+        "Suzanne Collins",
+        "Rebecca Yarros",
+        "Stephanie Garber",
+        "Ana Huang",
+        "Lynn Painter",
+        "Emily Henry",
+        "Gabrielle Zevin",
       ],
+      activeFilters: [],
+      filteredBooksArrays: [],
+      filteredBooks: []
     }
   },
   computed: {
     filteredProducts() {
-      if (this.currentFilter === "all") {
+      let filer = this.currentFilter;
+      if (this.currentFilter === "All") {
         return this.store.products;
-      } else {
-        return this.store.products.filter(product => product.tags.included(this.currentFilter));
       }
+      /*else {
+        const lowercaseFilter = this.currentFilter;
+        return this.store.products.filter(product => product.tags.includes(lowercaseFilter));
+      }*/
+
     },
+
     paginatedProducts() {
       const startIndex = (this.currentPage - 1) * this.itemsPerPage;
       const endIndex = startIndex + this.itemsPerPage;
-      return this.filteredProducts.slice(startIndex, endIndex);
+      if (this.filteredBooks.length > 0)
+      return this.filteredBooks.slice(startIndex, endIndex);
+      else{
+        return this.filteredProducts.slice(startIndex, endIndex);
+      }
+
+      /*return this.filteredProducts.slice(startIndex, endIndex);*/
     },
     totalPages() {
+      if(this.filteredBooks.length > 0)
+      return Math.ceil(this.filteredBooks.length / this.itemsPerPage);
+
       return Math.ceil(this.filteredProducts.length / this.itemsPerPage);
+
     }
   },
   methods: {
@@ -121,6 +110,31 @@ export default {
       if (this.currentPage < this.totalPages) {
         this.currentPage++;
       }
+    },
+    filterBooks(){
+
+      for (let i = 0; i < this.activeFilters.length; i++) {
+        let filter = this.activeFilters[i];
+        this.filteredBooksArrays.push(this.store.products.filter(product => product.tags.includes(filter)));
+      }
+
+      for (const proxyArray of this.filteredBooksArrays) {
+        for (const book of proxyArray) {
+          // Now you can access and work with each Proxy(Object) in each array
+          this.filteredBooks.push(book)
+        }
+      }
+
+    },
+    resetFilters(){
+      this.filteredBooks = [];
+      this.filteredBooksArrays = [];
+      this.activeFilters = [];
+    },
+    addActiveFilter(filter) {
+      console.log(this.activeFilters)
+      this.activeFilters.push(filter);
+
     },
     previousPage() {
       if (this.currentPage > 1) {

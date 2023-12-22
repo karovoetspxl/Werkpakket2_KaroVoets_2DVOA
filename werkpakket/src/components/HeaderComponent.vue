@@ -13,7 +13,7 @@
           <router-link to="/profile">Profile</router-link>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Cart</a>
+          <a href="/cart" class="nav-link">Cart</a>
         </li>
       </ul>
       <div class="hamburger">

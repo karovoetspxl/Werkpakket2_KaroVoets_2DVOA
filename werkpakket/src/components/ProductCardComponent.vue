@@ -1,4 +1,7 @@
+
+
 <template>
+
   <div class="book">
     <div class="afb"><img :src="product.image" :alt="product.alt"></div>
     <div class="inhoud">
@@ -8,15 +11,28 @@
     </div>
     <div class="prijs">
       <h2>{{product.price}}</h2>
-      <a href="#">
-        <button>View</button>
+      <a>
+        <button @click="goToDetailPage(product.id)">View</button>
       </a>
     </div>
   </div>
 </template>
 
 <script>
+import {useProductsStore} from "../store/store";
+
 export default {
+  data(){
+    return{
+      store: useProductsStore()
+    }
+  },
+  methods:{
+    goToDetailPage(id) {
+      this.store.selectedProduct = id;
+      this.$router.push('ProductDetail');
+    }
+  },
   props: [
     'product'
   ]
