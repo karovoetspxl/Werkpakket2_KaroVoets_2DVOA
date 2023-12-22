@@ -17,6 +17,10 @@
           <span class="mdi mdi-delete-empty mdi-24px"></span>
           <span>Delete</span>
         </button>
+        <div>
+          <div>price: {{calcSubTotal()}}</div>
+          <div>BTW: {{book.BTW}}</div>
+        </div>
       </div>
       <br>
 
@@ -33,6 +37,7 @@ export default {
     }
 
   },
+
   methods: {
     deleteBook(){
       this.store.deleteBook(this.book.id);
@@ -44,7 +49,12 @@ export default {
     decreaseAmount() {
       if (this.book.amountWinkelmand !== 0)
         this.book.amountWinkelmand--;
-    }
+    },
+    calcSubTotal(){
+      return this.book.amountWinkelmand * this.book.price;
+
+    },
+
   },
   name: "ProductWinkelmandComponent",
   props:[

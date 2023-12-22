@@ -34,7 +34,7 @@ export default {
     return{
       store: useProductsStore(),
       users:[
-        {id:1, email: "karovoets@hotmail.com",  wachtwoord: "karovoets"},
+        {id:1, email: "karovoets@hotmail.com",  wachtwoord: "karovoets", gemeente:"Baal", telefoonnummer:"0478326925", straat:"Rozendal"},
         {id:2, email: "jamie@hotmail.com",  wachtwoord: "jamie"}
 
       ]

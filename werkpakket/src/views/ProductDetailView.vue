@@ -44,8 +44,6 @@ export default {
 
       if (this.book.stock === 0){
         this.amountToBuy = 0;
-
-        return "This book is out of stock!"
       }
     },
 
@@ -60,13 +58,23 @@ export default {
       this.amountToBuy--;
     },
     addToWinkelmand(){
-      console.log(this.store.isLoggedIn);
-      if (this.store.isLoggedIn ===  true){
+      if (this.store.isLoggedIn ===  true && this.book.stock !== 0){
+
         this.book.amountWinkelmand = this.amountToBuy;
         this.store.addToWinkelmand(this.book);
+
         toast("Book added to shopping cart!", {
           theme: "colored",
           type: "success",
+          position: "top-left",
+          transition: "slide",
+          dangerouslyHTMLString: true
+        })
+      }
+      else if(this.book.stock === 0){
+        toast("Book is out of stock!", {
+          theme: "colored",
+          type: "warning",
           position: "top-left",
           transition: "slide",
           dangerouslyHTMLString: true

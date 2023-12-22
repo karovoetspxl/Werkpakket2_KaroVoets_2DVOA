@@ -8,8 +8,8 @@ export const useProductsStore = defineStore('products', {
         products: productsJson,
         selectedProduct: useLocalStorage('selectedProduct', 0),
         winkelmand: useLocalStorage('winkelmand', []),
-        loggedInUser:{},
-        isLoggedIn: false
+        loggedInUser:useLocalStorage('user',{}),
+        isLoggedIn: useLocalStorage('isLoggedIn',false)
     }),
     persistence: {
         enable: true,

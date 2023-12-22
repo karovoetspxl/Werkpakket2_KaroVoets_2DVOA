@@ -3,7 +3,6 @@
   <h1>{{this.store.loggedInUser.gemeente}}</h1>
   <h1>{{this.store.loggedInUser.straat}}</h1>
   <h1>{{this.store.loggedInUser.telefoonnummer}}</h1>
-  <button @click="signOut" >Sign out</button>
 </template>
 
 <script>
@@ -14,14 +13,10 @@ export default {
       store: useProductsStore()
     }
   },
-  name: "ProfileComponent",
-  methods:{
-    signOut(){
-      this.store.signOut();
-      this.$router.push('profile');
-      console.log(this.store.loggedInUser)
-    }
-  }
+  components:{
+    useProductsStore
+  },
+  name: "FormComponent"
 }
 </script>
 
