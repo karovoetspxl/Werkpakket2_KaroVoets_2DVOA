@@ -3,9 +3,9 @@
     <div class="header-text">
       <h1>Booktopia</h1>
       <p>Where every page is a new adventure.</p>
-      <a href="./ProductsView.vue">
+      <!--<a href="./ProductsView.vue">
         <button>Shop here</button>
-      </a>
+      </a>-->
     </div>
 
     <img src="../assets/images/BoekenHome.png" alt="Boekenhand">

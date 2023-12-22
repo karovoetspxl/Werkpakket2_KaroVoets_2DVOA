@@ -46,7 +46,7 @@
     "description": "\"The Ballad of Songbirds and Snakes\" by Suzanne Collins is a prequel to \"The Hunger Games\" trilogy, offering a glimpse into the early life of President Snow as he mentors tributes in the 10th Hunger Games. The novel explores the origins of the Capitol's cruel traditions, presenting a compelling narrative that unveils the moral complexities behind the iconic character.",
     "image": "src/assets/covers/songbirds-snakes.jpg",
     "alt": "songbirds and snakes",
-    "price": 15.00,
+    "price": 14.99,
     "BTW": 0.06,
     "stock": 50,
     "tags": ["Fantasy", "Suzanne Collins"]
@@ -255,7 +255,7 @@
     "description": "In this delightful summer challenge, January Andrews, a bestselling romance writer, and Augustus Everett, a literary author with a penchant for tragedy, embark on a creative exchange that defies their genre preferences. Living in neighboring beach houses, they strike a deal to break through writer's block: Augustus will attempt to write something happy, while January tackles the next Great American Novel, leading to a series of amusing adventures and a pact to avoid falling in love, challenging their beliefs about happily ever afters.",
     "image": "src/assets/covers/beach-read.jpg",
     "alt": "beach read",
-    "price": 10.00,
+    "price": 10.01,
     "BTW": 0.06,
     "stock": 35,
     "tags": ["Romance", "Emily Henry"]

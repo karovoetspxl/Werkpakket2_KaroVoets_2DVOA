@@ -17,8 +17,8 @@
           <span class="mdi mdi-delete-empty mdi-24px"></span>
           <span>Delete</span>
         </button>
-        <div>
-          <div>price: {{calcSubTotal()}}</div>
+        <div class="totalitem">
+          <div> Total price: {{calcSubTotal()}}</div>
           <div>BTW: {{book.BTW}}</div>
         </div>
       </div>
@@ -64,5 +64,24 @@ export default {
 </script>
 
 <style scoped>
-
+.btn-delete{
+  margin-top: 50%;
+  border: solid 2px #B2675E;
+  font-weight: bold;
+}
+.totalitem{
+  background-color: #B2675E;
+  border-radius: 5rem;
+  text-align: center;
+  padding: 2%;
+  margin-top: 30%;
+}
+@media screen and (max-width: 800px){
+  .btn-delete{
+    margin-top: 15%;
+  }
+  .totalitem{
+    margin-top: 10%;
+  }
+}
 </style>

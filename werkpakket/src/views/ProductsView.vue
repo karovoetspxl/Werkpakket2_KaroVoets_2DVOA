@@ -14,11 +14,15 @@
 
   <main class="main-products">
     <div class="filter">
-        <button v-for="filterTag in this.filters" @click="addActiveFilter(filterTag)" :class="{ 'selected': filterTag === currentFilter }">{{ filterTag[0].toUpperCase() + filterTag.slice(1) }}</button>
+      <button v-for="filterTag in this.filters" @click="addActiveFilter(filterTag)"
+              :class="{ 'selected': filterTag === currentFilter }">{{ filterTag[0].toUpperCase() + filterTag.slice(1) }}
+      </button>
+      <div id="frm">
+        <button class="fr" @click="this.filterBooks()">Filter</button>
+        <button class="fr" @click="this.resetFilters()">Reset</button>
+      </div>
     </div>
 
-  <button @click="this.filterBooks()">Filter</button>
-  <button @click="this.resetFilters()">Reset</button>
 
     <div class="page">
       <ProductCardComponent
@@ -32,7 +36,9 @@
       <div class="pagination">
         <button @click="previousPage" v-if="currentPage !== 1">&lt;</button>
         <ul>
-          <li v-for="page in this.totalPages"><button @click="goToPage(page)" :class="{ 'selected': page === currentPage }"> {{ page }}</button></li>
+          <li v-for="page in this.totalPages">
+            <button @click="goToPage(page)" :class="{ 'selected': page === currentPage }"> {{ page }}</button>
+          </li>
         </ul>
         <button @click="nextPage" v-if="currentPage !== totalPages">></button>
       </div>
@@ -90,16 +96,16 @@ export default {
       const startIndex = (this.currentPage - 1) * this.itemsPerPage;
       const endIndex = startIndex + this.itemsPerPage;
       if (this.filteredBooks.length > 0)
-      return this.filteredBooks.slice(startIndex, endIndex);
-      else{
+        return this.filteredBooks.slice(startIndex, endIndex);
+      else {
         return this.filteredProducts.slice(startIndex, endIndex);
       }
 
       /*return this.filteredProducts.slice(startIndex, endIndex);*/
     },
     totalPages() {
-      if(this.filteredBooks.length > 0)
-      return Math.ceil(this.filteredBooks.length / this.itemsPerPage);
+      if (this.filteredBooks.length > 0)
+        return Math.ceil(this.filteredBooks.length / this.itemsPerPage);
 
       return Math.ceil(this.filteredProducts.length / this.itemsPerPage);
 
@@ -111,7 +117,7 @@ export default {
         this.currentPage++;
       }
     },
-    filterBooks(){
+    filterBooks() {
 
       for (let i = 0; i < this.activeFilters.length; i++) {
         let filter = this.activeFilters[i];
@@ -126,7 +132,7 @@ export default {
       }
 
     },
-    resetFilters(){
+    resetFilters() {
       this.filteredBooks = [];
       this.filteredBooksArrays = [];
       this.activeFilters = [];

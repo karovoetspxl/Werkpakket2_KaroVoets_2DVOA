@@ -38,23 +38,31 @@ $fontsm: 12px;
   padding: 3%;
 
   .filter {
-    width: 12%;
-    .category {
+    width: 13%;
+    button {
       border: solid 2px grey;
       border-radius: 1rem;
       display: flex;
       justify-content: center;
       margin: 5%;
-      padding: 10%;
-      form {
-        display: flex;
-        flex-direction: column;
-        [type="checkbox"] {
-          vertical-align: middle;
-        }
+      padding: 2% 5%;
+      &:hover{
+        color: $colorh3;
+        background-color: $colorh1;
+        border: $colorh1 solid 2px;
+        cursor: pointer;
+      }
+    }
+    #frm{
+      margin-top: 25%;
+      .fr{
+        margin: 5%;
+        padding: 2% 50%;
       }
     }
   }
+
+
 
   .page {
     width: 80%;
@@ -87,7 +95,7 @@ $fontsm: 12px;
       .prijs {
         a {
           button {
-            margin-top: 60%;
+            margin-top: 100%;
             padding: 30% 80%;
             border-radius: 1rem;
             background-color: $colorh1;
@@ -111,26 +119,41 @@ $fontsm: 12px;
     display: flex;
     justify-content: center;
     margin-top: 3%;
-    a {
+    ul {
+      width: 20%;
+      li {
+        display: inline-block;
+        padding: 2%;
+
+        button {
+          color: black;
+          padding: 8px 16px;
+          text-decoration: none;
+          &:hover {
+            color: $colorh1;
+            font-weight: bold;
+          }
+        }
+
+        .active {
+          background-color: $colorh1;
+          color: $colorh3;
+          border-radius: 10%;
+        }
+      }
+    }
+    button {
       color: black;
       padding: 8px 16px;
       text-decoration: none;
-      &:hover{
+      &:hover {
         color: $colorh1;
+        font-weight: bold;
       }
-    }
-    .active{
-      background-color: $colorh1;
-      color: $colorh3;
-      border-radius: 10%;
     }
   }
 }
 $delete-red: red;
-
-body {
-  margin: 32px;
-}
 
 .btn {
   display: flex;
@@ -182,15 +205,23 @@ body {
 @media screen and (max-width: 768px) {
   .main-products {
     display: inline-block;
-    .filter{
-      width: 100%;
+    .filter {
+      height: 7vh;
+      width: 2vh;
       display: flex;
-      flex-direction: row;
-      .category{
-        width: 50%;
-        padding: 5%;
+      button {
+        text-align: center;
+        display: inline-block;
+      }
+      #frm{
+        margin-top: 25%;
+        .fr{
+          margin: 5%;
+          padding: 2% 50%;
+        }
       }
     }
+
     .page {
       width: 100%;
       .book {
@@ -220,6 +251,11 @@ body {
               margin: 5%;
             }
           }
+        }
+      }
+      .pagination {
+        ul {
+          width: 35%;
         }
       }
     }
