@@ -75,6 +75,7 @@ export default {
         toast("Book is out of stock!", {
           theme: "colored",
           type: "warning",
+          autoClose: 2000,
           position: "top-left",
           transition: "slide",
           dangerouslyHTMLString: true

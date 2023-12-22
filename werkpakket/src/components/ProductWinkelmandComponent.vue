@@ -76,6 +76,9 @@ export default {
   padding: 2%;
   margin-top: 30%;
 }
+button:hover{
+  cursor: pointer;
+}
 @media screen and (max-width: 800px){
   .btn-delete{
     margin-top: 15%;

@@ -29,25 +29,19 @@
 export default {
   name: "NavComponent",
   mounted() {
-    // Accessing elements with ref
     const hamburger = this.$refs.hamburger;
     const navMenu = this.$refs.navMenu;
     const navLink = this.$refs.navLink;
 
-    // Event listeners
     hamburger.addEventListener("click", this.mobileMenu);
 
-    // Loop through each nav link and add event listener
-    navLink.forEach(n => n.addEventListener("click", this.closeMenu));
   },
   methods: {
     mobileMenu() {
-      // Toggle 'active' class on hamburger and navMenu
       this.$refs.hamburger.classList.toggle("active");
       this.$refs.navMenu.classList.toggle("active");
     },
     closeMenu() {
-      // Remove 'active' class from hamburger and navMenu
       this.$refs.hamburger.classList.remove("active");
       this.$refs.navMenu.classList.remove("active");
     },
